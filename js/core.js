@@ -62,7 +62,7 @@ function Flickity( element, options ) {
     this.$element = jQuery( this.element );
   }
   // options
-  this.options = { ...this.constructor.defaults };
+  this.options = Object.assign({}, this.constructor.defaults);
   this.option( options );
 
   // kick things off
